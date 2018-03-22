@@ -1,5 +1,7 @@
     <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-      <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">CodeIgniter</a>
+      <label class="navbar-brand col-sm-3 col-md-2 mr-0 text-center">CodeIgniter</label>
+      <label class="navbar-brand col-sm-3 col-md-9 mr-0 text-center"><?php echo date('d/m/y H:i') ?></label>
+
     </nav>
 
     <div class="container-fluid">
@@ -8,13 +10,13 @@
           <div class="sidebar-sticky">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="Dashboard">
+                <a class="nav-link active" href="<?= base_url() ?>">
                   <span data-feather="home"></span>
                   Dashboard <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Usuario">
+                <a class="nav-link" href="<?= base_url() ?>Usuario">
                   <span data-feather="user"></span>
                   Usuários
                 </a>
