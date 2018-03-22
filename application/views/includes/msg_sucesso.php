@@ -1,4 +1,3 @@
-
 <div class="alert alert-success alert-dismissible fade show col-md-9 ml-sm-auto col-lg-10" role="alert">
   <?= $msg; ?>
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">

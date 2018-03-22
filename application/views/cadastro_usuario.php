@@ -1,4 +1,5 @@
 
+
 <div  class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
   <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
     <h1 class="h2">Novo Usuário</h1>
@@ -13,7 +14,7 @@
             <div class="col-md-3">
                 <div class="form-group">
                     <label for="cpf">CPF:</label> 
-                    <input class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" required="" type="" maxlength="14"/> 
+                    <input class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00" onkeypress="formatar(this,'000.000.000-00')" required="" type="" maxlength="14"/> 
                 </div>
             </div>
             <div class="col-md-7">
@@ -35,7 +36,7 @@
             <div class="col-md-6">
                 <div class="form-group">
                     <label for="email">Email:</label> 
-                    <input class="form-control" id="email" name="email" placeholder="Informe o email..." required="" type="email" maxlength="20"/> 
+                    <input class="form-control" id="email" name="email" placeholder="Informe o email..." required="" type="email" maxlength="100"/> 
                 </div>
             </div>
             <div class="col-md-4">
@@ -55,7 +56,9 @@
         </div>
         <div style="text-align: right;">
             <button class="btn btn-primary" type="submit">Salvar</button> 
-            <button class="btn btn-default" type="reset">Limpar Campos</button> </div>
+            <button class="btn btn-default" type="reset">Limpar Campos</button> 
+        </div>
             <br>
         </form>
     </div>
+
