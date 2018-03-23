@@ -56,9 +56,14 @@
         </div>
         <div style="text-align: right;">
             <button class="btn btn-primary" type="submit">Salvar</button> 
-            <button class="btn btn-default" type="reset">Limpar Campos</button> 
+            <a href="<?= base_url() ?>usuario"><button class="btn btn-default" type="button">Voltar</button></a> 
         </div>
             <br>
         </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
 

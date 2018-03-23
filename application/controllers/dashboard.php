@@ -11,9 +11,17 @@ class Dashboard extends CI_Controller
 	public function index() 
 	{ 
 		$this->verificar_sessao();
+		$this->db->select('*');
+		$dados['usuarios'] = $this->db->get('usuario')->result();
+		$dados['filmes'] = $this->db->get('filmes')->result();
+		$dados['jogos'] = $this->db->get('jogos')->result();
+		$valores['usuario'] = count($dados['usuarios']);
+		$valores['filme'] = count($dados['filmes']);
+		$valores['jogo'] = count($dados['jogos']);
+
 		$this->load->view('includes/html_header'); 
 		$this->load->view('includes/menu'); 
-		$this->load->view('dashboard'); 
+		$this->load->view('dashboard',$valores); 
 		$this->load->view('includes/html_footer'); 
 	}
 

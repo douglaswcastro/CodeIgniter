@@ -3,7 +3,7 @@
 		<h1 class="h2">Atualizar Usuário</h1>
 	</div>
 	<div class="col-md-12">
-		<form action="<?= base_url() ?>usuario/salvar_atualizacao" method="post">
+		<form action="<?= base_url() ?>usuario/salvar_atualizacao" method="post" class="form-control">
 			<input id="idUsuario" name="idUsuario" type="hidden" value="<?= $usuario[0]->idUsuario;?>" /> <br />
 			<div class="form-group">
 				<label for="nome">Nome:</label> 
@@ -52,7 +52,7 @@
 				</div>
 				<div style="text-align: right;">
 					<button class="btn btn-primary" type="submit">Salvar</button> 
-					<button class="btn btn-default" type="reset">Limpar Campos</button> 
+					<a href="<?= base_url() ?>usuario"><button class="btn btn-default" type="button">Voltar</button></a>
 				</div>
 			</form>
 		</div>
@@ -94,8 +94,12 @@
 						</div>
 					</div>
 				</form>
-			</div>
-		</div>
+	            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 		<script> 
 			$(document).ready(function() 
 			{ 

@@ -1,13 +1,11 @@
   
-<div class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-  <nav class="navbar ">
+<div class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 ">
+  <nav class="navbar">
     <div class="text-center">
-    <a class="navbar-brand" href="#">Controle de Filmes e Jogos</a>
+      <a class="navbar-brand" href="#">Controle de Filmes e Jogos</a>
     </div>
   </nav>
-      
-      <a class="my-2 my-lg-0" href="<?=base_url()?>dashboard/logout"><button class="btn btn-primary pull-right">Sair</button></a>
-    
+  <a class="my-2 my-lg-0" href="<?=base_url()?>dashboard/logout"><button class="btn btn-primary pull-right">Sair</button></a>
 </div>
 
 
@@ -29,19 +27,17 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="<?= base_url() ?>Filme">
               <span data-feather="video"></span>
               Filmes
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="<?= base_url() ?>Jogo">
               <span data-feather="monitor"></span>
               Jogos
             </a>
           </li>
         </ul>
-
-
       </div>
     </nav>

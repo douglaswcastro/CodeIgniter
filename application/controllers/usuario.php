@@ -36,6 +36,9 @@ class Usuario extends CI_Controller
 		}else if($indice == 6){
 			$data['msg'] = "Não foi possivel atualizar o usuario.";
 			$this->load->view('includes/msg_erro',$data); 
+		}else{
+			$data['msg'] = "";
+			$this->load->view('includes/msg_sucesso', $data);
 		}
 		$this->load->view('listar_usuario',$dados); 
 		$this->load->view('includes/html_footer'); 

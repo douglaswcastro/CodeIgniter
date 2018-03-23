@@ -1,5 +1,4 @@
-<div  class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
-	<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
 		<h1 class="h2">Usuários</h1>
 		<div class="col-md-2">
 			<a class="btn btn-primary btn-block" href="<?= base_url();?>usuario/cadastro">Novo Usuário</a> </div>
@@ -22,7 +21,7 @@
 					<td><?= $usu->email;?></td> 
 					<td><?= $usu->nivel==1?'Administrador':'Usuário';?></td> 
 					<td><?= $usu->status==1?'Ativo':'Inativo';?></td> 
-					<td>
+					<td style="text-align: right;">
 					<a class="btn btn-primary btn-group" href="<?= base_url('usuario/atualizar/'.$usu->idUsuario)?>"><i class="icon-user icon-white"></i></i>Atualizar</a> 
 					<a class="btn btn-danger btn-group" href="<?= base_url('usuario/excluir/'.$usu->idUsuario)?>" onclick="return confirm('Deseja realmente excluir o usuário?');">Remover</a> 
 					
@@ -31,5 +30,10 @@
 				<?php }?>
 					</tbody>
 				</table>
-				</div>
+	            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 			
