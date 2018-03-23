@@ -1,10 +1,19 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Usuario extends CI_Controller 
-{ 
+{
+
+	public function verificar_sessao()
+	{
+		if ($this->session->userdata('logado') == false) {
+			redirect('dashboard/login');
+		}
+	}
+
 
 	public function index($indice = null) 
-	{ 
+	{
+		$this->verificar_sessao();
 		$this->db->select('*');
 		$dados['usuarios'] = $this->db->get('usuario')->result();
 		$this->load->view('includes/html_header'); 
@@ -33,7 +42,8 @@ class Usuario extends CI_Controller
 	}
 
 	public function cadastro() 
-	{ 
+	{
+		$this->verificar_sessao();
 		$this->load->view('includes/html_header'); 
 		$this->load->view('includes/menu'); 
 		$this->load->view('cadastro_usuario'); 
@@ -42,6 +52,7 @@ class Usuario extends CI_Controller
 
 	public function cadastrar()
 	{
+		
 		$data['nome'] = $_POST['nome'];
 		$data['cpf'] = $_POST['cpf'];
 		$data['endereco'] = $_POST['endereco'];
@@ -58,7 +69,7 @@ class Usuario extends CI_Controller
 	}
 
 	public function excluir($id=null){
-		
+		$this->verificar_sessao();
 		$this->db->where('idUsuario',$id);
 
 		if($this->db->delete('usuario')){
@@ -69,7 +80,7 @@ class Usuario extends CI_Controller
 	}
 
 	public function atualizar($id = null,$indice = null){
-
+		$this->verificar_sessao();
 		$this->db->where('idUsuario',$id);
 
 		$data['usuario'] = $this->db->get('usuario')->result();
@@ -90,6 +101,7 @@ class Usuario extends CI_Controller
 
 	public function salvar_atualizacao()
 	{
+		$this->verificar_sessao();
 		$id = $_POST['idUsuario'];
 		$data['nome'] = $_POST['nome'];
 		$data['cpf'] = $_POST['cpf'];
@@ -108,6 +120,7 @@ class Usuario extends CI_Controller
 	}
 
 	public function salvar_senha(){
+		$this->verificar_sessao();
 		$id = $_POST['idUsuario'];
 		
 		$senha_antiga = md5($_POST['senha_antiga']);

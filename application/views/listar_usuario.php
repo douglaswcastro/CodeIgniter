@@ -6,9 +6,9 @@
 		</div>
 
 		<div class="col-md-12">
-			<table class="table table-striped table-bordered"> <tbody>
+			<table class="table"> <tbody>
 				<tr> 
-					<th>Id</th> 
+					<th class="text-hide">Id</th> 
 					<th>Nome</th> 
 					<th>Email</th> 
 					<th>Nivel</th> 
@@ -17,7 +17,7 @@
 				</tr>
 				<?php foreach($usuarios as $usu){ ?>
 				<tr> 
-					<td><?= $usu->idUsuario;?></td> 
+					<td class="text-hide"><?= $usu->idUsuario;?></td> 
 					<td><?= $usu->nome;?></td> 
 					<td><?= $usu->email;?></td> 
 					<td><?= $usu->nivel==1?'Administrador':'Usuário';?></td> 

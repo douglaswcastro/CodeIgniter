@@ -1,0 +1,18 @@
+para executar o sistema é necessário em banco de dados mysql
+
+e configurar a conexão no sistema para os parametros do banco de dados 
+
+criação do banco de dados 
+
+USUARIO PADRÃO ACESSO: admin@admin
+SENHA PADRÃO ACESSO: admin
+
+create database 
+
+CREATE DATABASE IF NOT EXISTS `db_codeigniter`;
+USE `db_codeigniter`;
+
+CREATE TABLE IF NOT EXISTS `usuario` ( `idUsuario` int(11) NOT NULL AUTO_INCREMENT, `nome` varchar(50) NOT NULL, `cpf` varchar(20) NOT NULL, `endereco` varchar(50) NOT NULL, `email` varchar(100) NOT NULL, `senha` varchar(45) NOT NULL, `status` int(11) NOT NULL, `nivel` int(11) NOT NULL, PRIMARY KEY (`idUsuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+
+INSERT INTO `usuario` (`nome`, `cpf`, `endereco`, `email`, `senha`, `status`, `nivel`) VALUES ( 'Admin', '123.123.123-23', 'R. Example, 012', 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3', 1, 1);
