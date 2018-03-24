@@ -40,7 +40,7 @@ class Usuario extends CI_Controller
 			$data['msg'] = "";
 			$this->load->view('includes/msg_sucesso', $data);
 		}
-		$this->load->view('listar_usuario',$dados); 
+		$this->load->view('usuarios/listar_usuario',$dados); 
 		$this->load->view('includes/html_footer'); 
 	}
 
@@ -49,7 +49,7 @@ class Usuario extends CI_Controller
 		$this->verificar_sessao();
 		$this->load->view('includes/html_header'); 
 		$this->load->view('includes/menu'); 
-		$this->load->view('cadastro_usuario'); 
+		$this->load->view('usuarios/cadastro_usuario'); 
 		$this->load->view('includes/html_footer'); 
 	}
 
@@ -97,7 +97,7 @@ class Usuario extends CI_Controller
 			$data['msg'] = "Não foi possivel atualizar a senha.";
 			$this->load->view('includes/msg_erro', $data);
 		}
-		$this->load->view('editar_usuario',$data); 
+		$this->load->view('usuarios/editar_usuario',$data); 
 		$this->load->view('includes/html_footer'); 
 
 	}
