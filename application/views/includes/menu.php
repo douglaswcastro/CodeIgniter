@@ -1,12 +1,23 @@
   
-<div class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 ">
-  <nav class="navbar">
-    <div class="text-center">
-      <a class="navbar-brand" href="#">Controle de Filmes e Jogos</a>
+
+  <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="<?= base_url() ?>">Dashboard</a>
+  <div class="col-md-2">
+    <div class="row">
+      <ul class="navbar-nav px-9">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href=""><span data-feather="user"></span> Olá, <?= $this->session->userdata['nome'] ?></a>          
+        </li>
+      </ul>
+      <ul class="navbar-nav px-3">
+        <li class="nav-item text-nowrap">
+          <a class="nav-link" href="<?= base_url('dashboard/logout') ?>"><span data-feather="log-out"></span>Sair</a>
+        </li>
+      </ul>
     </div>
-  </nav>
-  <a class="my-2 my-lg-0" href="<?=base_url()?>dashboard/logout"><button class="btn btn-primary pull-right">Sair</button></a>
-</div>
+  </div>
+</nav> 
+
 
 
 <div class="container-fluid">

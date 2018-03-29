@@ -1,9 +1,10 @@
   <link href="<?= base_url(); ?>assets/css/signin.css" rel="stylesheet">
   
   <div class="text-center  container">
+  
     <form class="form-signin" action="<?= base_url() ?>dashboard/logar" method="post">
-    <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
-      <h1 class="h3 mb-3 font-weight-normal">Acesso Restrito</h1>
+    <img src="<?= base_url('images/codeigniter.png') ?>" class="mb-4" alt="" width="72" height="72">
+          <h1 class="h3 mb-3 font-weight-normal">Acesso Restrito</h1>
       <input type="email" id="email" name="email" class="form-control" placeholder="Email" required autofocus maxlength="100">
       <input type="password" id="senha" name="senha" class="form-control" placeholder="Senha" required maxlength="45">
       <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
