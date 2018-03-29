@@ -1,10 +1,10 @@
   
 
   <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0">
-  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="<?= base_url() ?>">Dashboard</a>
-  <div class="col-md-2">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="<?= base_url() ?>">Controle de Filmes e Jogos</a>
+  <div class="col-md-3" style="text-align: right;">
     <div class="row">
-      <ul class="navbar-nav px-9">
+      <ul class="navbar-nav px-10">
         <li class="nav-item text-nowrap">
           <a class="nav-link" href=""><span data-feather="user"></span> Olá, <?= $this->session->userdata['nome'] ?></a>          
         </li>

@@ -8,7 +8,7 @@
               <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
                <div class="card-header text-center">
                 <h6 class="mt-3 text-white">
-                 <span data-feather="monitor" class="text-center"></span>
+                 <span data-feather="user" class="text-center"></span>
                  Usuarios Cadastrados
                </h6>
                <h6 class="mt-3 text-white">
@@ -21,7 +21,7 @@
            <div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
              <div class="card-header text-center">
               <h6 class="mt-3 text-white">
-               <span data-feather="monitor" class="text-center"></span>
+               <span data-feather="video" class="text-center"></span>
                Filmes Cadastrados
              </h6>
              <h6 class="mt-3 text-white">
