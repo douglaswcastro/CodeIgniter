@@ -28,7 +28,7 @@
           <li class="nav-item">
             <a class="nav-link active" href="<?= base_url() ?>">
               <span data-feather="home"></span>
-              Dashboard <span class="sr-only">(current)</span>
+              Dashboard
             </a>
           </li>
           <li class="nav-item">
